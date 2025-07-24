@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+// Variables
+$color-principal: #a3195b;
+$color-fondo: #fadcd9;
+$tipo-letra: "Playfair Display", serif;
+
+.frase {
+  background-color: $color-fondo;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+
+  blockquote {
+    max-width: 800px;
+    color: $color-principal;
+    font-family: $tipo-letra;
+    font-size: 1.5rem;
+    text-align: center;
+
+    p {
+      margin: 0;
+    }
+  }
+}
+.carousel-inner {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.carousel img {
+  max-height: 300px;
+  object-fit: cover;
+}
+@mixin sombra-redondeada {
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.carousel-inner {
+  @include sombra-redondeada;
+}
