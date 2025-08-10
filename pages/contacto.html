@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto | Noelia Caballero</title>
+    <!-- SEO Básico -->
+    <title>Contacto | Noelia Caballero - Desarrolladora Web Front-End</title>
+    <meta
+      name="description"
+      content="Contacta a Noelia Caballero, desarrolladora web front-end. Completa el formulario para consultas sobre diseño web, proyectos y colaboraciones."
+    />
+    <meta
+      name="keywords"
+      content="contacto, desarrolladora web, diseño web, proyectos, frontend, HTML, CSS, Bootstrap, Noelia Caballero"
+    />
+    <meta name="author" content="Noelia Caballero" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Contacto | Noelia Caballero - Desarrolladora Web Front-End"
+    />
+    <meta
+      property="og:description"
+      content="Completa el formulario de contacto para comunicarte con Noelia Caballero, desarrolladora web especializada en diseño responsive."
+    />
+    <meta
+      property="og:image"
+      content="https://TU-DOMINIO.com/img/contacto-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://TU-DOMINIO.com/pages/contacto.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Fuentes -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Estilos -->
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
@@ -25,7 +59,7 @@
         <a href="sobre-mi.html">Sobre Mí</a>
         <a href="proyectos.html">Proyectos</a>
         <a href="servicios.html">Servicios</a>
-        <a href="contacto.html">Contacto</a>
+        <a href="contacto.html" class="active">Contacto</a>
       </nav>
 
       <!-- Contenido principal -->
@@ -50,6 +84,7 @@
                   id="nombre"
                   name="nombre"
                   placeholder="Tu nombre completo"
+                  aria-label="Escribe tu nombre completo"
                   required
                 />
 
@@ -59,6 +94,7 @@
                   id="email"
                   name="email"
                   placeholder="tucorreo@email.com"
+                  aria-label="Escribe tu correo electrónico"
                   required
                 />
 
@@ -68,6 +104,7 @@
                   name="mensaje"
                   rows="5"
                   placeholder="Contame en qué puedo ayudarte..."
+                  aria-label="Escribe tu mensaje"
                   required
                 ></textarea>
 
